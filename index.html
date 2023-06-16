@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito G27</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Google Fonts - Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <img src="./assets/img/logo_nombre.png" alt="logo_nombre" class="nav__img">
+        <button class="nav__button nav__button--toggle">
+            <ion-icon name="cart-outline"></ion-icon>
+        </button>
+        <section class="nav__car" id="car">
+            <button class="buy__button" id="buy-car">Comprar</button>
+            <button class="empty__button" id="empty-car">Empty car</button>
+            <div class="total__price">   
+                <h3>Total: </h3>
+                <P id="total-price"></P>
+            </div>
+            <hr>
+            <div class="car__list" id="car__list">
+
+            </div>
+        </section>
+    </nav>
+    <header class="header">
+        <div class="h1">
+            <h1>NEW SEASON GEN27</h1>
+            <div class="typeproducts">
+                <span>Huddies</span>
+                <span>shirts</span>
+                <span>sweaters</span>
+            </div>
+            
+        </div>
+        <div class="baner">
+            <img src="./assets/img/logo blanco.png" alt="logo_header" class="header__img">
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <h3 class="main__h3">Todos nuestros productos</h3>
+            <!-- Lista de productos -->
+            <div id="products-container" class="main__products products">
+
+            </div>
+        </section>
+        <!-- Modal -->
+        <section class="modal" id="modal-container">
+            <div class="close">
+                <ion-icon name="close-outline" class="modal__icon"></ion-icon>
+            </div>
+            <div id="modal-element" class="modal__view">
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Hecho con ❤️ en Academlo por:</p>
+        <div class="participate">
+            <h2>grupo 8</h2>
+            <h3>integrantes: Anthony Parra, Lucia Echenique y Bernard Nicolas</h3>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/f3560adb1b.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
